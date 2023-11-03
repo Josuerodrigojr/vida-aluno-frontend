@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap');
+body {
+  margin: 0;
+  font: 1rem  'Trirong', serif;
+  background-color: #FFF8F1;
+
+
+}
+
+
+
+
+.flex-start {
+	justify-content: flex-start;
+}
+
+.container {
+	max-width: 490px;
+	margin: 0 auto;
+	display: flex;
+    margin-top: 6%;
+
+
+    
+}
+
+.container div{
+    margin: 5px;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 1em;
+    text-decoration: none 
+}
+
+.titulo{
+    margin: 30px;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 4em;
+}
+
+.texto-sem-sublinhado{
+    text-decoration: none;
+}
+
