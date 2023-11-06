@@ -1,7 +1,9 @@
 import React from 'react'
 import Topo from '../src/componentes/Topo'
 import PaginaInicial from '../src/componentes/PaginaInicial'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+
 
 
 function App() {
@@ -16,10 +18,11 @@ function App() {
     <Router>
      <Topo/>
      <PaginaInicial/>
+
     </Router>
 
     
-    <h1>Teste</h1>
+
 
     
 

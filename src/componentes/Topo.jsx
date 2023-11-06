@@ -1,14 +1,16 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
+
 let linkCorrente = {
     color: "#027399",
   };
 
 function Topo (){
     return (
-    <>
-    <h1 className='titulo' > Vida do Aluno</h1>
+
+    <div>
+    <h1 className='titulo' > Estrela do saber</h1>
     <section className="container flex-start">
        
             <div>
@@ -41,7 +43,8 @@ function Topo (){
     </section>
 
 
-</>
+</div>
+
      
     )
 }

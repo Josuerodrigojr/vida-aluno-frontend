@@ -3,6 +3,7 @@ body {
   margin: 0;
   font: 1rem  'Trirong', serif;
   background-color: #FFF8F1;
+  color: #000000;
 
 
 }
@@ -15,7 +16,7 @@ body {
 }
 
 .container {
-	max-width: 490px;
+	max-width: 550px;
 	margin: 0 auto;
 	display: flex;
     margin-top: 6%;
@@ -28,7 +29,7 @@ body {
     margin: 5px;
 	padding: 0 10px;
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.2em;
     text-decoration: none 
 }
 
@@ -43,3 +44,17 @@ body {
     text-decoration: none;
 }
 
+
+
+.imagem-aparece {
+	opacity: 0; /* Inicialmente, a imagem é transparente */
+	transition: opacity 4s; /* Adiciona uma transição suave de 1 segundo */
+  
+	/* Adicione estilos de posicionamento, tamanho, etc., conforme necessário */
+  }
+  
+  /* Quando a classe 'apareceu' é adicionada, a imagem fica visível */
+  .imagem-aparece.apareceu {
+	opacity: 1;
+  }
+  

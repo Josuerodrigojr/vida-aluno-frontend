@@ -1,0 +1,111 @@
+h1{
+    margin: 1px;
+	padding: 0 10px;
+
+	font-size: 4em;
+
+    
+}
+
+h2{
+    font-size: 3em;
+}
+
+top{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 5%;
+    text-align: center;
+
+}
+
+img{
+    width: 100%; /* Define a largura desejada (metade da largura original) */
+    clip-path: polygon(2 1, 100% 0, 100% 100%, 0 100%); /* Define um retângulo que cobre metade da imagem */
+  
+}
+
+main{
+    display: flex;
+
+}
+
+.coluna{
+    flex: 1;
+
+    position: relative;
+
+}
+
+.salaDeAula{
+    max-width: 600px;
+    padding-left: 80px;
+
+}
+
+.cantina{
+    max-width: 600px;
+    padding-top: 250px;
+
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 65%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+
+    color: #000000; 
+    padding: 10px;
+    border-radius: 5px; 
+  }
+
+  .texto-sobre-imagem2 {
+    position: absolute;
+    top: 25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+
+    color: #000000; 
+    padding: 10px;
+    border-radius: 5px; 
+  }
+
+  span{
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    background-color: #E6DB2E;
+    margin: 40px;
+    color: #000000;
+
+  
+  }
+
+  .imagem-main{
+    max-height: 300px;
+    
+
+  }
+
+  span p{
+    padding: 10%;
+    text-align: justify;
+
+    
+  }
+
+  footer{
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    background-color: #E6DB2E;
+    margin: 40px;
+    color: #000000;
+    align-items: center;
+
+  
+  }
+
+
