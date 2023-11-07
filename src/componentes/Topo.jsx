@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
 let linkCorrente = {
@@ -19,9 +19,9 @@ function Topo (){
       </NavLink>
             </div>
             <div>
-            <NavLink className="texto-sem-sublinhado" exact activeStyle={linkCorrente} to="/sobre">
+            <Link className="texto-sem-sublinhado" exact activeStyle={linkCorrente} to="/sobre">
         Sobre
-      </NavLink>
+      </Link>
             </div>
             <div>
             <NavLink className="texto-sem-sublinhado" exact activeStyle={linkCorrente} to="/equipe">

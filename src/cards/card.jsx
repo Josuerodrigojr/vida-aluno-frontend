@@ -1,11 +1,18 @@
+import { CButton, CCard, CCardBody, CCardImage, CCardText, CCardTitle } from '@coreui/react';
 import React from 'react';
 
 const Card = (props) => {
   return (
-    <div className="card">
-      <h2>{props.title}</h2>
-      <p>{props.content}</p>
-    </div>
+    <CCard style={{ width: '18rem' }}>
+  <CCardImage orientation="top" src={'./cantina.jpg'} />
+  <CCardBody>
+    <CCardTitle>{props.title}</CCardTitle>
+    <CCardText>
+      Professor de Matemática
+      </CCardText>
+    <CButton href="#">Go somewhere</CButton>
+  </CCardBody>
+</CCard>
   );
 };
 
