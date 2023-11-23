@@ -4,13 +4,13 @@ import React from 'react';
 const Card = (props) => {
   return (
     <CCard style={{ width: '18rem' }}>
-  <CCardImage orientation="top" src={'./cantina.jpg'} />
+  <CCardImage orientation="top" src={props.img} />
   <CCardBody>
     <CCardTitle>{props.title}</CCardTitle>
     <CCardText>
-      Professor de Matemática
+      {props.description}
       </CCardText>
-    <CButton href="#">Go somewhere</CButton>
+    <CButton href={props.url}>{props.button}</CButton>
   </CCardBody>
 </CCard>
   );

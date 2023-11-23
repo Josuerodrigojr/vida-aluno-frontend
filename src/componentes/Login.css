@@ -1,0 +1,8 @@
+.app {
+  display: flex;
+  justify-content: center; /* Para manter o espaçamento nas extremidades */
+  align-items: center; /* Para centralizar verticalmente os itens */
+  margin: 10%; /* Adiciona espaçamento de 10% nas extremidades */
+  gap: 200px; /* Adiciona um espaçamento de 20 pixels entre os itens */
+  text-align: center;
+}
