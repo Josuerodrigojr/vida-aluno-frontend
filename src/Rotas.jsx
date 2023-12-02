@@ -7,6 +7,10 @@ import Topo from "./componentes/Topo";
 import Equipe from "./componentes/Equipe";
 import LoginProfessor from "./componentes/LoginProfessor"
 import Login from "./componentes/Login"
+import MeuComponente from "./componentes/Teste";
+import MeuComponente2 from "./componentes/Teste2";
+import LoginAluno from "./componentes/LoginAluno";
+import PaginaAluno from "./componentes/PaginaAluno";
 
 
 function Rotas (){
@@ -20,6 +24,10 @@ function Rotas (){
         <Route path='/equipe' element={<Equipe/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/loginProfessor' element={<LoginProfessor/>} />
+        <Route path='/loginAluno' element={<LoginAluno/>} />
+        <Route path='/comportamentoAluno' element={<PaginaAluno/>} />
+        <Route path='/teste2' element={<MeuComponente2/>} />
+        <Route path='/teste' element={<MeuComponente/>} />
         
         </Routes>
         </Router>
