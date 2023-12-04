@@ -11,6 +11,8 @@ import MeuComponente from "./componentes/Teste";
 import MeuComponente2 from "./componentes/Teste2";
 import LoginAluno from "./componentes/LoginAluno";
 import PaginaAluno from "./componentes/PaginaAluno";
+import Turmas from "./componentes/Turma";
+import DetalhesAluno from "./componentes/DetalhesAluno";
 
 
 function Rotas (){
@@ -28,6 +30,8 @@ function Rotas (){
         <Route path='/comportamentoAluno' element={<PaginaAluno/>} />
         <Route path='/teste2' element={<MeuComponente2/>} />
         <Route path='/teste' element={<MeuComponente/>} />
+        <Route path='/caderneta/turma/:turma' element={<Turmas/>} />
+        <Route path='/alunos/detalhes/:id' element={<DetalhesAluno/>} />
         
         </Routes>
         </Router>

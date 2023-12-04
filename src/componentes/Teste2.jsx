@@ -15,7 +15,7 @@ const MeuComponente = () => {
         console.log(email);
         const response = await api.post(`/professores/turmas`, { email });
         setTurmas(response.data);
-        console.log(turmas);
+        console.log(turmas.length);
       } catch (error) {
         console.error('Erro ao obter dados:', error);
       }
@@ -23,9 +23,11 @@ const MeuComponente = () => {
 
     fetchData();
   }, []); // O array de dependências vazio garante que useEffect só seja executado uma vez, sem depender de variáveis específicas.
-const direcionarTurma = (e)=>{
+const direcionarTurma = async (turma)=>{
+  console.log(turma)
+  navigate(`/caderneta/turma/${turma}`)
+  
 
-  navigate('/sobre');
 
 }
   return (
@@ -33,8 +35,9 @@ const direcionarTurma = (e)=>{
       {turmas.map((item, index)=>(
         <CardTurmas
 
+        key={index}  // Certifique-se de adicionar uma chave única para cada item no loop
         turmas={item}
-        clicar={direcionarTurma}
+        clicar={() => direcionarTurma(item)}  // Passe uma função para clicar
         
         />
         
