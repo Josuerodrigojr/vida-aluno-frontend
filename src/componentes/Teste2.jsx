@@ -15,7 +15,7 @@ const MeuComponente = () => {
         console.log(email);
         const response = await api.post(`/professores/turmas`, { email });
         setTurmas(response.data);
-        console.log(turmas.length);
+        console.log(turmas);
       } catch (error) {
         console.error('Erro ao obter dados:', error);
       }
