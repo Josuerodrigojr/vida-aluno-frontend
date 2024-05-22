@@ -1,49 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import api from '../service/api';
-import CardTurmas from '../cards/cardTurmas';
-import { CButton} from '@coreui/react';
-import { useNavigate } from 'react-router-dom';
+import Card from '../cards/card'
+import React from 'react'
+import './Login.css'
 
 const MeuComponente = () => {
-  const [turmas, setTurmas] = useState([]);
-  const navigate = useNavigate()
+  const cardsData = [
+    {
+      title: 'Turma A',
+      description: 'Setimo ano A',
+      imageUrl: 'turmaA.jpg',
+      button: 'Detalhes',
+      url: '/loginturmaA',
+      img: './turmaA.jpg'
+    },
+    {
+      title: 'Turma B',
+      description: 'Setimo ano B',
+      imageUrl: 'turmaB.jpg',
+      button: 'Detalhes',
+      url: '/loginturmaB',
+      img: './turmaB.jpg' 
+    }
+  ];
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const email = await localStorage.getItem('chaveDado');
-        console.log(email);
-        const response = await api.post(`/professores/turmas`, { email });
-        setTurmas(response.data);
-        console.log(turmas);
-      } catch (error) {
-        console.error('Erro ao obter dados:', error);
-      }
-    };
-
-    fetchData();
-  }, []); // O array de dependências vazio garante que useEffect só seja executado uma vez, sem depender de variáveis específicas.
-const direcionarTurma = async (turma)=>{
-  console.log(turma)
-  navigate(`/caderneta/turma/${turma}`)
-  
-
-
-}
   return (
-    <div className="flex flex-wrap">
-      {turmas.map((item, index)=>(
-        <CardTurmas
-
-        key={index}  // Certifique-se de adicionar uma chave única para cada item no loop
-        turmas={item}
-        clicar={() => direcionarTurma(item)}  // Passe uma função para clicar
-        
+    <div className="app">
+      {cardsData.map((card, index) => (
+        <Card
+          key={index}
+          title={card.title}
+          description={card.description}
+          button= {card.button}
+          url={card.url}
+          img={card.img}
         />
-        
       ))}
-
-
     </div>
   );
 };

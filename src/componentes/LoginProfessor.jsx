@@ -80,6 +80,7 @@ function LoginProfessor (){
             <input type="senha" value={senha} onChange={handleSenhaChange} />
           </label>
           <button type="submit" onClick={login} className="bg-green-500 text-#ffffff font-bold py-2 px-4 rounded">Entrar</button>
+          <div>{`SELECT * FROM professores WHERE email = '${email}' AND senha='${senha}'`}</div>
           <div>{mensagem}</div>
         </form>
       </div>        
