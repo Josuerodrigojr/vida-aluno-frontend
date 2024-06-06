@@ -35,7 +35,7 @@ function LoginProfessor (){
           
           try{
             const response = await api.post(`/professores/login`, dados);
-
+            
             if(response.status === 200){
               console.log(email)
               setProfessor(email)
